@@ -49,12 +49,13 @@ a {
   text-decoration: none;
   color: black;
   text-decoration: underline;
-  text-decoration-color: red;
+  text-decoration-color: mediumseagreen;
 
 }
 a:active,
 a:hover {
   outline-width: 0;
+  font-weight: 600;
 }
 abbr[title] {
   border-bottom: none;
@@ -623,6 +624,13 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
+}
+.headline > span {
+  /* font-style: italic; */
+  font-weight: 600;
+}
+footer {
+  float: right;
 }
 @media only screen and (max-width: 480px) {
   html {

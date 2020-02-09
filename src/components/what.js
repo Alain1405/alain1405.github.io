@@ -8,7 +8,6 @@ class What extends Component {
       "passion",
       "craft",
       "hobby",
-      "desire",
       "occupation",
       "vocation",
     ]
