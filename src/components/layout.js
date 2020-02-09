@@ -6,12 +6,13 @@
  */
 
 import React from "react"
+import { Link } from "gatsby"
+
 import PropTypes from "prop-types"
 
 import "./layout.css"
 
 const Layout = ({ children }) => {
-
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
@@ -23,7 +24,18 @@ const Layout = ({ children }) => {
         }}
       >
         <main className="row">{children}</main>
-        <footer>© {new Date().getFullYear()} </footer>
+        <footer>
+          <Link className="contact"
+            to="/contact"
+            state={{
+              modal: true,
+            }}
+          >
+            <button>Contact me</button>
+          </Link>
+          <div className="copyright">© {new Date().getFullYear()}</div>
+          
+        </footer>
       </div>
     </>
   )

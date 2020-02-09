@@ -1,6 +1,5 @@
-
 /* Import grid */
-@import '../styles/_grid.css';
+@import "../styles/_grid.css";
 
 html {
   font-family: sans-serif;
@@ -50,7 +49,6 @@ a {
   color: black;
   text-decoration: underline;
   text-decoration-color: mediumseagreen;
-
 }
 a:active,
 a:hover {
@@ -629,10 +627,83 @@ pre tt:after {
   /* font-style: italic; */
   font-weight: 600;
 }
-footer {
+.ReactModal__Content.ReactModal__Content--after-open {
+  width: 500px;
+  max-width: 90%;
+}
+.ReactModal__Content.ReactModal__Content--after-open .close {
+ float: right;
+}
+button {
+ /* margin-top: 2rem;     */
+ display: inline-block;
+ margin-bottom: 0;
+ font-weight: 400;
+ text-align: center;
+ white-space: nowrap;
+ vertical-align: middle;
+ -ms-touch-action: manipulation;
+ touch-action: manipulation;
+ cursor: pointer;
+ background-image: none;
+ border: 1px solid #ccc;
+ padding: 6px 12px;
+ font-size: 14px;
+ line-height: 1.42857143;
+ border-radius: 4px;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+input, textarea {
+  
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+
+  margin-bottom: 1.5rem;
+}
+textarea {
+  min-height: 5rem;
+}
+form label {
+margin-top: 1rem;
+}
+footer .contact {
   float: right;
 }
-@media only screen and (max-width: 480px) {
+.contact button {
+  font-size: 1.5rem;
+}
+
+form {
+  margin: 5%;
+  max-width: 600px;
+}
+.ReactModalPortal form {
+  margin: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
   html {
     font-size: 100%;
   }
