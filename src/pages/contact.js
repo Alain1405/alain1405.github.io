@@ -9,7 +9,7 @@ const ModalExamplePage = () => (
       { modal &&  <Link className="close" to={closeTo}>&#10005;</Link>}
 
         <h2>Contact Alain</h2>
-        <form name="contact"  method="POST" data-netlify="true" >
+        <form action="https://formspree.io/mayopjgb" method="POST">
           <label>
             Your name
             <input type="text" name="name" placeholder="Your name"/>
