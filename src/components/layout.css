@@ -687,12 +687,6 @@ textarea {
 form label {
 margin-top: 1rem;
 }
-footer .contact {
-  float: right;
-}
-.contact button {
-  font-size: 1.5rem;
-}
 
 form {
   margin: 5%;

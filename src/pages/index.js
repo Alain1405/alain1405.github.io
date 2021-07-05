@@ -3,11 +3,12 @@ import React from "react"
 import Layout from "../components/layout"
 import MeImage from "../components/me_image"
 import What from "../components/what"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
+
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Alain Scialoja" />
+    <Seo title="Alain Scialoja" />
     <div className="col-md-6">
       <h1>Alain Scialoja</h1>
       <p className="headline">

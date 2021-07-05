@@ -6,13 +6,16 @@
  */
 
 import React from "react"
-import { Link } from "gatsby"
 
 import PropTypes from "prop-types"
 
 import "./layout.css"
 
+import Helmet from "react-helmet"
+
 const Layout = ({ children }) => {
+
+
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
@@ -25,16 +28,56 @@ const Layout = ({ children }) => {
       >
         <main className="row">{children}</main>
         <footer>
-          <Link className="contact"
-            to="/contact"
-            state={{
-              modal: true,
-            }}
-          >
-            <button>Contact me</button>
-          </Link>
           <div className="copyright">© {new Date().getFullYear()}</div>
-          
+
+          <Helmet>
+            <script src="https://formspree.io/js/formbutton-v1.min.js"></script>
+
+            <script>
+              {`
+              window.formbutton = window.formbutton || function() {
+                (formbutton.q = formbutton.q || []).push(arguments)
+              };
+              
+              formbutton("create", {
+                  action: "https://formspree.io/f/mayopjgb",
+                  title: "Contact Alain",
+                  fields: [
+                      {
+                          type: "text",
+                          label: "Full name:",
+                          name: "name",
+                          required: true,
+                          placeholder: ""
+                      },{
+                          type: "email",
+                          label: "Email:",
+                          name: "email",
+                          required: true,
+                          placeholder: "your@email.com"
+                      },
+                      {
+                          type: "textarea",
+                          label: "Message:",
+                          name: "message",
+                          placeholder: "",
+                      },
+                      {
+                          type: "submit"
+                      }
+                  ],
+                  styles: {
+                      title: {
+                          backgroundColor: "gray"
+                      },
+                      button: {
+                          backgroundColor: "gray"
+                      }
+                  }
+              });
+              `}
+            </script>  
+            </Helmet>
         </footer>
       </div>
     </>

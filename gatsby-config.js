@@ -1,27 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Personal website`,
+    title: `Alain Scialoja`,
     description: `Developer of great Tech.`,
     author: `@alain1405`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-modal-routing`,
-      options: {
-        modalProps: {
-            style: {
-              content: {
-              top: "50%",
-              left: "50%",
-              right: "auto",
-              bottom: "auto",
-              marginRight: "-50%",
-              transform: "translate(-50%, -50%)",
-            },
-          },
-        },
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
