@@ -2,9 +2,26 @@ module.exports = {
   siteMetadata: {
     title: `Alain Scialoja`,
     description: `Developer of great Tech.`,
-    author: `@alain1405`,
+    author: `Alain Scialoja`,
+    // Used for resolving images in social cards
+    siteUrl: `https://alainscialoja.com`,
+    // Used for social links in the root footer
+    social: [
+      {
+        name: `GitHub`,
+        url: `https://github.com/alain1405`,
+      },
+    ]
   },
   plugins: [
+    {
+      resolve: `gatsby-theme-blog`,
+      options: {
+        // basePath defaults to `/`
+        basePath: `/blog`,
+        preset: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
