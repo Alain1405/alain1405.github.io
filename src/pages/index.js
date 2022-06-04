@@ -20,7 +20,7 @@ const IndexPage = () => (
         <p>CTO, Technical Product Owner, Technical Lead for IoT, e-learning (Open edX), Blockchain and sustainability.</p>
         <h2>Currently</h2>
         <h3>
-          VP of Engineering @ <a href="https://strata.co.jp/" target="_blank">Strata KK</a> -
+          VP of Engineering @ <a href="https://strata.co.jp/" rel="noreferrer" target="_blank">Strata KK</a> -
           Remote
         </h3>
         <p>
@@ -29,7 +29,7 @@ const IndexPage = () => (
         </p>
         <h2>Of note</h2>
         <h3>
-          VP of Engineering @ <a href="https://infarm.com" target="_blank">Infarm</a> - Berlin
+          VP of Engineering @ <a href="https://infarm.com" rel="noreferrer" target="_blank">Infarm</a> - Berlin
         </h3>
         <p>
           I designed and directed the development of Infarm's Urban Farming
@@ -38,7 +38,7 @@ const IndexPage = () => (
           successful series A funding.
         </p>
         <h3>
-          CTO @ <a href="https://www.bumbeelabs.com/" target="_blank">BumbeeLabs</a> - Stockholm
+          CTO @ <a href="https://www.bumbeelabs.com/" rel="noreferrer" target="_blank">BumbeeLabs</a> - Stockholm
         </h3>
         <p>
           Pioneered footfall analytics and user flow acquisition and processing in
